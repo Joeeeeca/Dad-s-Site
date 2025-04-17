@@ -834,11 +834,25 @@ display: flex;
 
 /*Testimonial Page*/
 .reviews-section {
-  min-height:100vh;
-  padding-top:125px;
-  background:000;
-  color:white;
-  text-align:Center;
+  min-height: 100vh;
+  padding-top: 125px;
+  padding-bottom:55px;
+  background: #000;
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* This centers vertically */
+  gap: 2rem; /* Space between header and grid */
+}
+
+.reviews-header,
+.reviews-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .reviews-header h2 {
@@ -865,6 +879,7 @@ display: flex;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  margin-bottom:20px;
 }
 
 .video-wrapper video {
@@ -874,6 +889,10 @@ display: flex;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.video-wrapper video:last-child{
+  margin-bottom:100px;
 }
 
 @media screen and (min-width:768px) {
